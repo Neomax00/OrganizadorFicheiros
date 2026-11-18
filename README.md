@@ -1,7 +1,7 @@
 "Organizador de Ficheiros"
 
 Objetivo:
-Criar uma aplicação em Python , que analisa uma pasta, indica e contabiliza os ficheiros existentes e identifica as extensões dos ficheiros (em expecifico .py, .txt e .csv) 
+Criar uma aplicação em Python , que analisa uma pasta, indica e contabiliza os ficheiros existentes, identifica as extensões dos ficheiros (em expecifico .py, .txt e .csv) e apresenta o tamanho em bytes.
 
 Ferramentas Utilizadas:
 - Python e Spyder

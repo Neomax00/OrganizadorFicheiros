@@ -30,17 +30,22 @@ if not ficheiros:
 else:
     for ficheiro in ficheiros:
         extensao = ficheiro.suffix
+        tamanho = ficheiro.stat().st_size
         
         if extensao == ".py":
-            tipo = "Ficheiro Python (.py)"
+            print("Tipo: Ficheiro Python (.py)")
         elif extensao == ".txt":
-            tipo = "Ficheiro de Texto (.txt)"
+            print("Tipo: Ficheiro de Texto (.txt)")
         elif extensao == ".csv":
-            tipo = "Ficheiro de Dados (.csv)"
+            print("Tipo: Ficheiro de Dados (.csv)")
+        else:
+            print("Tipo: Outro formato")
+        
+        
                     
         print("Nome:", ficheiro.name)
         print("Extensão:", extensao)
-        print("Tipo:", tipo)
+        print("Tamanho:", tamanho, "bytes")
         print("-----------------------")
         
     print(f"Total de ficheiros encontrados: {len(ficheiros)}")
